@@ -1,0 +1,10 @@
+doctype html
+html
+  include head.pug
+  body
+    .container
+      include header.pug
+      .content
+        h1.title !{htmlTitle}
+        | !{html}
+      include footer.pug

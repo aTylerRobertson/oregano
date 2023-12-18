@@ -1,0 +1,31 @@
+html
+  head
+    title=site.title+' - '+title
+    style
+      include ../css/style.css
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="twitter:card" content="summary")
+    meta(name="og:title" content=title)
+    meta(name="og:description" content=content)
+    meta(name="og:image" content=image)
+    link(rel='icon', href=site.favicon, type='image/png')
+  body
+    .container
+      .header
+        h1
+          a(href=site.url) !{site.title}
+        ul(class="nav")
+          each val, key in site.header
+            li
+             a(href= val) !{key}
+      .content
+        h1.title
+         | !{displayTitle}
+        if meta
+          .meta= meta
+        | !{content}
+      .footer
+        ul(class="nav")
+          each val, key in site.footer
+            li
+             a(href= val) !{key}

@@ -1,0 +1,27 @@
+doctype html
+html
+  include head.pug
+  body
+    .container
+      include header.pug
+      .content
+        h1.title !{htmlTitle}
+        | !{html}
+        ul(class="post-list")
+          each post in posts
+            li
+             a(href='/read/' + post.id) !{post.htmlTitle}
+             span(class="meta") !{post.prettyDate}
+        #pagination
+          if prev != null
+            a(href='?p='+prev) 👈 
+          if next != null || prev != null
+            - var first = (current * site.pagination) - site.pagination + 1
+            - var last = first + site.pagination - 1
+            if last > all 
+              - var last = all
+            span Posts #{first}-#{last} of #{all}
+          if next != null
+            a(href='?p='+next)  👉
+      include footer.pug
+       

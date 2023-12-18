@@ -1,0 +1,16 @@
+{
+  "name": "Oregano",
+  "description": "Super simple blogging for writers who don't have the thyme. 🌱",
+  "version": "1.5.0",
+  "scripts": {
+    "start": "node oregano.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "showdown": "^1.9.1",
+    "pug": "^3.0.2"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}

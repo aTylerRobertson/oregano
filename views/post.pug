@@ -1,0 +1,12 @@
+doctype html
+html
+  include head.pug
+  body
+    .container
+      include header.pug
+      .content
+        h1.title !{htmlTitle}
+        span.meta !{meta}
+        | !{html}
+        // This would be a great space for comments or social sharing options, if you want those.
+      include footer.pug

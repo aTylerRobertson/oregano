@@ -1,0 +1,21 @@
+doctype html
+html
+  include head.pug
+  body
+    .container
+      include header.pug
+      .content
+        h1.title Search
+        form(action='/search' method='get')
+          input(type='text' placeholder='search for...' name='q' id='search-query' autocomplete='off' required)
+          button(type='submit' id='search-submit') 🔍
+        if query != null
+          | !{html}
+          - var results = posts.length == 1 ? 'result' : 'results'
+          h2 !{posts.length} !{results} for "!{query}"
+          ul(class="post-list")
+            each post in posts
+              li
+               a(href='/read/' + post.id) !{post.htmlTitle}
+               span(class="meta") !{post.prettyDate}
+      include footer.pug

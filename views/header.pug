@@ -1,0 +1,7 @@
+.header
+  h1
+    a(href=site.url) !{site.title}
+  ul(class="nav")
+    each val, key in site.header
+      li
+       a(href= val) !{key}

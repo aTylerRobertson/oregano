@@ -1,0 +1,13 @@
+doctype xml
+rss(version="2.0" xmlns:atom="http://www.w3.org/2005/Atom")
+  channel
+    title !{site.title}
+    link !{site.url}
+    description !{site.description}
+    for post in posts
+      item
+        title !{post.plainTitle}
+        guid !{site.url + "/read/" + post.id}
+        link !{site.url + "/read/" + post.id}
+        pubDate !{post.modifiedDate.toUTCString()}
+        description !{"<![CDATA[" + post.html + "]]>"}

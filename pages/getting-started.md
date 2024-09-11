@@ -1,16 +1,10 @@
 # Getting started
 
-Welcome to Oregano! If [you didn't already know](/about), it's a tiny [Glitch](https://glitch.com) app designed to help you start blogging with as few frills as possible. I'm glad you're here!
+Welcome to Oregano! If [you didn't already know](/about), it's a tiny app that I first built on [Glitch](https://glitch.com), designed to help you start blogging with as few frills as possible. I'm glad you're here!
 
-To start blogging with Oregano, you'll want a [Glitch](https://glitch.com) account. 
-
-That will let you **remix** this app to create a new copy of it on your account, and start your new blog!
-
-<center><h2>
-  [🌱 Click to Remix! 🌱](https://glitch.com/edit/#!/remix/oregano-blog)
-  </h2></center>
+The fastest way to start using Oregano is to remix it on Glitch: https://glitch.com/edit/#!/remix/oregano-blog
   
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5XDg0h4vks4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+I've got a short video walkthrough here as well: https://www.youtube.com/watch?v=5XDg0h4vks4
 
 ## Opening the box
 
